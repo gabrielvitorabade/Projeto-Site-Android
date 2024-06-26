@@ -1,0 +1,140 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Freeman&display=swap');
+@font-face {
+    font-family: 'Android';
+    src: url(../fontes/idroid.otf) format('opentype');
+}
+*{
+    padding: 0px;
+    margin: 0px;
+}
+:root{
+    --cor1: #c5ebd6;
+    --cor2: #83e1ad;
+    --cor3: #3ddc84;
+    --cor4: #2fa866;
+    --cor5: #1a5c37;
+    --cor6: #063d1e;
+
+    --font-padrao: 'Arial', 'Helvetica', sans-serif;
+    --font-destaque: "Freeman", sans-serif;
+    --font-android: 'Android';
+}
+body{ 
+    background-image: linear-gradient( to top,var(--cor5), var(--cor4) );
+    margin: 0px;
+}
+main{
+    background-color: white;
+    min-width: 300px;
+    max-width: 800px;
+    margin: auto;
+    padding: 10px;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.267);
+    margin-bottom: 20px;
+    border-radius: 0px 0px 10px 10px;
+}
+main a {
+    color: var(--cor6);
+    text-decoration: none;
+}
+main a:hover {
+    background-color: var(--cor3);
+    transition-duration: 0.2s;
+    
+}
+header{
+    background-image:linear-gradient(to bottom,var(--cor3), var(--cor5));
+    text-align: center;
+    height: 200px;
+    width: 100%;
+    text-shadow: 2px 3px 2px rgba(0, 0, 0, 0.301);
+    
+}
+header>p{
+    text-align: center;
+    font-family: var(--font-destaque);
+    color: white;
+}
+main img.pequena{
+    max-width: 350px;
+    display: block;
+    margin: auto;
+}
+header>h1{
+    color: white;
+    font-weight: normal;
+    padding-top: 1em;
+    font-family: var(--font-destaque)
+}
+nav{
+    background-color:#9AE5B8 ;
+    text-align: center;
+    padding: 8px;
+}
+nav>a:hover{
+    background-color: var(--cor3);
+    padding: 8px;
+    border-radius: 6%;
+    transition-duration: 0.5s;
+}
+nav>a{
+    text-decoration: none;
+    padding: 8px;
+    color: var(--cor6);
+    font-family: var(--font-destaque)
+}
+img{
+    width: 100%;
+}
+h2, h1{
+    font-weight: normal;
+    padding: 1em 0em 1em 0.2em;
+    color: var(--cor6);
+    font-family: var(--font-android);
+    text-shadow: 2px 3px 2px rgba(0, 0, 0, 0.349);
+
+}
+p ,aside {  
+    padding: 1em 0.5em;
+    font-family: var(--font-padrao);
+    text-indent: 1em;
+    text-align: justify;
+    line-height: 1.5em;
+}
+.video2{
+    border-radius:0px 20px ;
+    height: auto;
+    text-align: center;
+    background-color: var(--cor6);
+    max-width:800px;
+}
+main  .video{
+    width: 100%;
+    padding-top: 1%;
+    position: relative;
+}
+main.video>iframe{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+}
+ul{
+    list-style-position: inside;
+    columns: 2;
+    list-style-type: '\1F5F8\00A0';
+}
+aside{
+    background-color:var(--cor2) ;
+    margin-top: 1em;
+    padding-top: 8px;
+    border-radius: 6px;
+}
+footer{
+    background-color: var(--cor6);
+}
+footer>p{
+    margin: 10px 0px 0px 0px;
+    color: white;
+}
